@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".navigationactivity"
+    tools:showIn="@layout/app_bar_navigationactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="#028678"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+
+            android:id="@+id/DepositeTxtId"
+            android:onClick="Deposit"
+
+            android:text="Deposit"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Expense"
+            android:id="@+id/ExpensesTxtId"
+            android:onClick="Expenses"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/DebtTxtId"
+            android:onClick="Debt"
+            android:text="Debt"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/CreditTxtId"
+            android:onClick="Credit"
+            android:text="Credit"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TotalTxtId"
+            android:onClick="Total"
+            android:text="Total"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#e3f7f4f4"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:weightSum="3"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:textColor="#1fff01"
+                android:textStyle="normal"
+                android:layout_height="wrap_content"
+                android:text="Income" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:text="5000"
+                android:textColor="#01ff45"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:textColor="#ff0101"
+                android:textStyle="normal"
+                android:layout_height="wrap_content"
+                android:text="Expenses" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:text="2000"
+                android:textColor="#ff0000"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:textColor="#1fff01"
+
+                android:textStyle="normal"
+                android:layout_height="wrap_content"
+                android:text="Balance" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:text="3000"
+                android:textColor="#01ff45"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="bottom"
+            android:layout_marginTop="10dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+
+
+
+           <ListView
+               android:id="@+id/ListId"
+               android:listSelector="#64ededed"
+               android:divider="#6b6b6b"
+               android:dividerHeight="1dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </ListView>
+
+
+
+                <!-- calender -->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="100dp"-->
+                    <!--android:background="#f5f5f5"-->
+
+                    <!--android:orientation="horizontal"-->
+
+                    <!--android:padding="5dp"-->
+                    <!--android:weightSum="3"-->
+                    <!--tools:layout_editor_absoluteX="16dp"-->
+                    <!--tools:layout_editor_absoluteY="722dp">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="30dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/daycalendar" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Day history"-->
+
+                            <!--android:textColor="#000"-->
+                            <!--android:textStyle="normal" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/monthcalender" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Month history"-->
+
+                            <!--android:textColor="#000"-->
+                            <!--android:textStyle="normal" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="30dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:src="@drawable/yearcalender" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Year history"-->
+
+                            <!--android:textColor="#000"-->
+                            <!--android:textStyle="normal" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:menu="@menu/bottom_navigation">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/daily_history"
+            android:title="Daily History"
+            android:icon="@drawable/day"
+            />
+        <item
+            android:id="@+id/monthly_history"
+            android:title="Monthly History"
+            android:icon="@drawable/month"
+            />
+
+        <item
+            android:id="@+id/yearly_history"
+            android:title="Yearly history"
+            android:icon="@drawable/year"
+            />
+
+
+
+    </group>
+
+</menu>

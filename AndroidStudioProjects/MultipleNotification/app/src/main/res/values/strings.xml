@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultipleNotification</string>
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to news topic</string>
+</resources>

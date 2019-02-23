@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".firstpage">
+
+    <LinearLayout
+        android:background="#028678"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="5"
+        android:textAllCaps="true"
+
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:text="Deposit"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Expense"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            android:layout_height="wrap_content" />
+          <TextView
+            android:text="DEBT"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+              android:textAllCaps="true"
+              android:gravity="center_horizontal"
+
+              android:layout_height="wrap_content" />
+          <TextView
+            android:text="CREDIT"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+              android:textAllCaps="true"
+              android:gravity="center_horizontal"
+
+              android:layout_weight="1"
+            android:layout_height="wrap_content" />
+          <TextView
+            android:text="Total"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+                android:gravity="center_horizontal"
+              android:textAllCaps="true"
+
+              android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:weightSum="3"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="722dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/daycalendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day history"
+
+                android:textColor="#000"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/monthcalender" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month history"
+
+                android:textColor="#000"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yearcalender" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year history"
+
+                android:textColor="#000"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">P_Phone_Contacts</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Dialer</string>
+    <string name="tab_text_2">Contacts</string>
+    <string name="tab_text_3">Groups</string>
+    <string name="action_settings">Settings</string>
+</resources>
